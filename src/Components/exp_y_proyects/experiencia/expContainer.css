@@ -1,0 +1,57 @@
+
+.exp-container {
+    width: 100%;
+    display: flex;
+    gap: 10px; /* Ajusta según sea necesario */
+
+    article {
+        width: 100%;
+        max-height: 600px;
+        overflow-y: auto;
+        padding-right: 1rem; /* Evita que el contenido se superponga con la barra de desplazamiento */
+
+        /* Personalización de la scrollbar para navegadores WebKit (Chrome, Safari) */
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #2c2c2c; /* Color de fondo de la pista de la scrollbar */
+        }
+
+        /* Personalización de la scrollbar para Firefox */
+        scrollbar-width: thin;
+        scrollbar-color: #8AEDC9 transparent;
+    }
+
+    h2 {
+        color: #8AEDC9;
+        font-size: 18px;
+
+        @media (min-width: 768px) {
+            font-size: 22px;
+        }
+    }
+}
+
+.exp-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px; /* Asegura que las cards no se corten */
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .exp-container {
+        flex-direction: column;
+        gap: 3em; /* Solo cambia el gap en pantallas pequeñas */
+
+        .card-exp-container {
+            flex-direction: column;
+        }
+    }
+}
+

@@ -1,0 +1,79 @@
+.menuMobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .menuMobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .menuMobile ul li {
+    margin: 4em 0;
+  }
+  
+  .menuMobile ul li a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+  
+  .menuMobile.show {
+    opacity: 1;
+    transform: translateY(0);
+    backdrop-filter: blur(5px);
+  }
+  
+  .close-mobile-menu-button {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    top: 30px;
+    right: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .handIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    animation: wave 2s infinite;
+  }
+  
+  @keyframes wave {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(15deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(10deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .menuDesk {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .menuMobile {
+      display: none;
+    }
+  }
+  
