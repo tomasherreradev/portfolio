@@ -1,9 +1,11 @@
 import ProyectsCard from "./card/ProyectsCard";
 import arrowIcon from "/src/assets/icons/arrow.svg";
 
+import imgMec_Dom from '/src/assets/images/proyectos/mec_dom.webp'
+
 const projects = [
   {
-    img: "/src/assets/images/example.PNG",
+    img: imgMec_Dom,
     title: "Developer - Freelancer",
     description: "Me encargué de planificar, diseñar, codificar, posicionar y publicitar los proyectos que conseguía en plataformas como Workana, Discord, entre otras.",
     skills: [
@@ -17,7 +19,7 @@ const projects = [
     ]
   },
   {
-    img: "/src/assets/images/example.PNG",
+    img: imgMec_Dom,
     title: "Developer - Freelancer",
     description: "Me encargué de planificar, diseñar, codificar, posicionar y publicitar los proyectos que conseguía en plataformas como Workana, Discord, entre otras.",
     skills: [
@@ -31,7 +33,7 @@ const projects = [
     ]
   },
   {
-    img: "/src/assets/images/example.PNG",
+    img: imgMec_Dom,
     title: "Developer - Freelancer",
     description: "Me encargué de planificar, diseñar, codificar, posicionar y publicitar los proyectos que conseguía en plataformas como Workana, Discord, entre otras.",
     skills: [
