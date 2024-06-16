@@ -28,7 +28,7 @@ export default function Skills() {
         </p>
       </div>
       <section>
-        <ul className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 gap-12">
+        <ul className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-12">
           {skillData.map((skill, index) => (
             <li
               key={index}
@@ -36,7 +36,7 @@ export default function Skills() {
             >
               <img
                 className="max-w-[40px] h-full w-full max-h-[40px] filter hover:saturate-150"
-                src={`./src/assets/icons/tecnologias/${skill.icon}.svg`}
+                src={`/src/assets/icons-tech/${skill.icon}.svg`}
                 alt={skill.name}
               />
               <p className="text-[14px]">{skill.name}</p>

@@ -3,7 +3,7 @@ import arrowIcon from "/src/assets/icons/arrow.svg";
 
 const projects = [
   {
-    img: "./src/assets/images/example.PNG",
+    img: "/src/assets/images/example.PNG",
     title: "Developer - Freelancer",
     description: "Me encargué de planificar, diseñar, codificar, posicionar y publicitar los proyectos que conseguía en plataformas como Workana, Discord, entre otras.",
     skills: [
@@ -17,7 +17,7 @@ const projects = [
     ]
   },
   {
-    img: "./src/assets/images/example.PNG",
+    img: "/src/assets/images/example.PNG",
     title: "Developer - Freelancer",
     description: "Me encargué de planificar, diseñar, codificar, posicionar y publicitar los proyectos que conseguía en plataformas como Workana, Discord, entre otras.",
     skills: [
@@ -31,7 +31,7 @@ const projects = [
     ]
   },
   {
-    img: "./src/assets/images/example.PNG",
+    img: "/src/assets/images/example.PNG",
     title: "Developer - Freelancer",
     description: "Me encargué de planificar, diseñar, codificar, posicionar y publicitar los proyectos que conseguía en plataformas como Workana, Discord, entre otras.",
     skills: [

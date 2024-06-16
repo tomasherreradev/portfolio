@@ -6,7 +6,7 @@ export default function ExpCard({ year, title, role, description, skills }) {
       </div>
 
       <div className="flex flex-col items-start px-4">
-        <h3 className="text-[16px] xl:text-[18px] font-bold text-white">{title}</h3>
+        <h3 className="text-[15px] xl:text-[18px] font-bold text-white text-nowrap">{title}</h3>
         <span className="text-[13px] mb-5">{role}</span>
 
         <p className="text-left mb-5 text-white">

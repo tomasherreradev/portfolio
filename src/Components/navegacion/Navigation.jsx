@@ -74,7 +74,7 @@ export default function NavigationDesk() {
           <ul className="gap-4">
             {enlaces.map((enlace) => (
               <li key={enlace.name}>
-                <a href={`/${enlace.href}`} className="transition-all hover:text-[#8AEDC9] font-light">
+                <a href={`/${enlace.href}`} className="transition-all hover:text-[#8AEDC9] font-light" onClick={(e) => handleScroll(e, enlace.href)}>
                   &#47;&#47;{enlace.name}
                 </a>
               </li>
