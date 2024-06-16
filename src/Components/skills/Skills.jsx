@@ -36,7 +36,7 @@ export default function Skills() {
             >
               <img
                 className="max-w-[40px] h-full w-full max-h-[40px] filter hover:saturate-150"
-                src={`/src/assets/icons-tech/${skill.icon}.svg`}
+                src={`/assets/icons-tech/${skill.icon}.svg`}
                 alt={skill.name}
               />
               <p className="text-[14px]">{skill.name}</p>
