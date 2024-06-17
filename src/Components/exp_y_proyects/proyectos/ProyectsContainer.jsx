@@ -2,48 +2,53 @@ import ProyectsCard from "./card/ProyectsCard";
 import arrowIcon from "/src/assets/icons/arrow.svg";
 
 import imgMec_Dom from '/src/assets/images/proyectos/mec_dom.webp'
+import hylls_Rec from '/src/assets/images/proyectos/hylls-rec.webp'
+import devWebCamp from '/src/assets/images/proyectos/dev-webcamp.webp'
 
 const projects = [
   {
     img: imgMec_Dom,
     title: "Developer - Freelancer",
-    description: "Me encargué de planificar, diseñar, codificar, posicionar y publicitar los proyectos que conseguía en plataformas como Workana, Discord, entre otras.",
+    description: "Consiste en una landing page en la que se exhiben los trabajos realizados para un taller mecánico de Medellín. Más allá del código, mi principal desafío fue optimizar el SEO y las publicidades con Google Ads.",
+    href: 'https://mecanicoadomicilioenmedellin.com/',
     skills: [
-      "Javascript",
-      "HTML5",
-      "CSS3",
-      "PHP",
-      "MySQL",
-      "SCSS",
-      "Figma",
+      "React",
+      "Tailwind",
+      "React Router"
     ]
   },
   {
-    img: imgMec_Dom,
-    title: "Developer - Freelancer",
-    description: "Me encargué de planificar, diseñar, codificar, posicionar y publicitar los proyectos que conseguía en plataformas como Workana, Discord, entre otras.",
+    img: hylls_Rec,
+    title: "Developer - CODEYNC",
+    description: "Proyecto que realicé en conjunto con mis compañeros de CodeYNC, trabajé gran parte del backend y un poco en el frontend.",
+    href: 'https://hyllsrecords.com/',
     skills: [
-      "Javascript",
-      "HTML5",
-      "CSS3",
-      "PHP",
+      "Node.js",
+      "Express",
+      "React",
+      "React Router",
       "MySQL",
-      "SCSS",
+      "Tailwind",
       "Figma",
+      "Scrum",
+      "Git",
+      "Postman"
     ]
   },
   {
-    img: imgMec_Dom,
-    title: "Developer - Freelancer",
-    description: "Me encargué de planificar, diseñar, codificar, posicionar y publicitar los proyectos que conseguía en plataformas como Workana, Discord, entre otras.",
+    img: devWebCamp,
+    title: "Developer - Estudiante",
+    description: "Fue un proyecto que hice como práctica integral de todo lo que aprendí. CRUDS, autenticaciones, panel de adminitración, pasarelas de pago, entre otras.",
+    href: 'https://github.com/tomasherreradev/proyecto_campus',
     skills: [
       "Javascript",
       "HTML5",
       "CSS3",
-      "PHP",
-      "MySQL",
       "SCSS",
-      "Figma",
+      "MySQL",
+      "PHP",
+      "Gulp",
+      "Composer",
     ]
   }
 ];
@@ -64,6 +69,7 @@ export default function ProyectsContainer() {
                 img={project.img}
                 title={project.title}
                 description={project.description}
+                href={project.href}
                 skills={project.skills}
               />
             ))}

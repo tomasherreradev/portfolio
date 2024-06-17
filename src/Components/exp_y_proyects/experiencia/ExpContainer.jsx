@@ -18,33 +18,33 @@ const experiences = [
     ]
   },
   {
-    year: '2022 - 2023',
-    title: 'Developer - Freelancer',
+    year: '2023 - 2024',
+    title: 'Developer - CODEYNC',
     role: 'Full-Stack Developer',
-    description: 'Me encargué de planificar, diseñar, codificar, posicionar y publicitar los proyectos que conseguía en plataformas como Workana, Discord, entre otras.',
+    description: 'Formé parte de un equipo para una startup de Colombia. Mis tareas variaban desde crear APIs y CRUDS, hasta maquetar y crear el Frontend. También, en menor medida, realicé tareas como historias de usuario, debuggear errores, participar de reuniones y planificación',
     skills: [
       "Javascript",
-      "HTML5",
-      "CSS3",
-      "PHP",
+      "React",
+      "Node.js",
+      "MongoDB",
       "MySQL",
-      "SCSS",
+      "Tailwind",
       "Figma",
+      "Nest.js",
+      "Angular 17",
+      "Scrum",
     ]
   },
   {
-    year: '2022 - 2023',
+    year: '2024 - Actualidad',
     title: 'Developer - Freelancer',
     role: 'Full-Stack Developer',
-    description: 'Me encargué de planificar, diseñar, codificar, posicionar y publicitar los proyectos que conseguía en plataformas como Workana, Discord, entre otras.',
+    description: 'Ahora mismo me encuentro desarrollando y aprendiendo tecnologías nuevas como freelancer, pero me gustaría formar parte de un equipo.',
     skills: [
-      "Javascript",
-      "HTML5",
-      "CSS3",
-      "PHP",
-      "MySQL",
-      "SCSS",
-      "Figma",
+      "Astro",
+      "Bootstrap",
+      "Next.js",
+      "AWS - EC2"
     ]
   }
 ];
