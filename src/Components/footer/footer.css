@@ -4,10 +4,11 @@
   }
 
   .li-social img {
-    transition: transform 0.6s ease-out;
+    transition: all 0.3s ease-out;
     font-size: 18px;
+
   }
   
   .li-social:hover img {
-    transform: rotate(360deg); /* rotate the icon 360 degrees */
+    filter: invert(48%) sepia(110%) saturate(240%) hue-rotate(86deg) brightness(118%) contrast(119%);
   }

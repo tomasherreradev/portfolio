@@ -36,12 +36,13 @@ const experiences = [
     ]
   },
   {
-    year: '2024 - Actualidad',
-    title: 'Developer - Freelancer',
+    year: '2024 - 2025',
+    title: 'Developer - InitSoluciones',
     role: 'Full-Stack Developer',
-    description: 'Ahora mismo me encuentro desarrollando y aprendiendo tecnologías nuevas como freelancer, pero me gustaría formar parte de un equipo.',
+    description: 'Ahora mismo me encuentro desarrollando y aprendiendo tecnologías nuevas en InitSoluciones.',
     skills: [
-      "Astro",
+      "Laravel",
+      "Symfony",
       "Bootstrap",
       "Next.js",
       "AWS - EC2"

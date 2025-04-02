@@ -1,79 +1,110 @@
-.menuMobile {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .menuMobile ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-  }
-  
-  .menuMobile ul li {
-    margin: 4em 0;
-  }
-  
-  .menuMobile ul li a {
-    color: white;
-    font-size: 1.2em;
-    text-decoration: none;
-  }
-  
-  .menuMobile.show {
-    opacity: 1;
-    transform: translateY(0);
-    backdrop-filter: blur(5px);
-  }
-  
-  .close-mobile-menu-button {
-    position: fixed;
-    width: 32px;
-    height: 32px;
-    top: 30px;
-    right: 40px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+/* Estilos mejorados para el menú de navegación móvil */
 
-  .handIcon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    animation: wave 2s infinite;
+.menuMobile {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.95), rgba(10, 10, 10, 0.95));
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.menuMobile.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.menuMobile ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menuMobile ul li {
+  margin: 1.2em 0;
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: fadeInSlide 0.4s ease-out forwards;
+}
+
+.menuMobile ul li:nth-child(1) { animation-delay: 0.1s; }
+.menuMobile ul li:nth-child(2) { animation-delay: 0.2s; }
+.menuMobile ul li:nth-child(3) { animation-delay: 0.3s; }
+.menuMobile ul li:nth-child(4) { animation-delay: 0.4s; }
+
+.menuMobile ul li a {
+  color: #ffffff;
+  font-size: 1.6em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.menuMobile ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #8AEDC9;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menuMobile ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.menuMobile ul li a:hover {
+  color: #8AEDC9;
+}
+
+.close-mobile-menu-button {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+.close-mobile-menu-button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeInSlide {
+  from {
+      transform: translateX(-20px);
+      opacity: 0;
   }
-  
-  @keyframes wave {
-    0% { transform: rotate(0deg); }
-    20% { transform: rotate(15deg); }
-    40% { transform: rotate(-10deg); }
-    60% { transform: rotate(10deg); }
-    80% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
+  to {
+      transform: translateX(0);
+      opacity: 1;
   }
-  
-  @media screen and (max-width: 767px) {
-    .menuDesk {
+}
+
+@media screen and (max-width: 767px) {
+  .menuDesk {
       display: none;
-    }
   }
-  
-  @media screen and (min-width: 768px) {
-    .menuMobile {
+}
+
+@media screen and (min-width: 768px) {
+  .menuMobile {
       display: none;
-    }
   }
-  
+}

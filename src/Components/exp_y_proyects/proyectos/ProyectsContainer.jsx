@@ -1,56 +1,52 @@
 import ProyectsCard from "./card/ProyectsCard";
 import arrowIcon from "/src/assets/icons/arrow.svg";
 
-import imgMec_Dom from '/src/assets/images/proyectos/mec_dom.webp'
-import hylls_Rec from '/src/assets/images/proyectos/hylls-rec.webp'
-import devWebCamp from '/src/assets/images/proyectos/dev-webcamp.webp'
+import hawkcodedImage from '/src/assets/images/proyectos/hawkcoded.webp'
+import autosalexImage from '/src/assets/images/proyectos/autosalex.webp'
+import artdhistoireImage from '/src/assets/images/proyectos/artdhistoire.webp'
 
 const projects = [
   {
-    img: imgMec_Dom,
-    title: "Developer - Freelancer",
-    description: "Consiste en una landing page en la que se exhiben los trabajos realizados para un taller mecánico de Medellín. Más allá del código, mi principal desafío fue optimizar el SEO y las publicidades con Google Ads.",
-    href: 'https://mecanicoadomicilioenmedellin.com/',
+    img: hawkcodedImage,
+    title: "HawkCoded - Freelancer",
+    description: "Consiste en una landing page en la que se exhiben los servicios prestados por una empresa tecnológica.",
+    href: 'https://phenomenal-strudel-e4e0c2.netlify.app/',
     skills: [
       "React",
       "Tailwind",
-      "React Router"
-    ]
-  },
-  {
-    img: hylls_Rec,
-    title: "Developer - CODEYNC",
-    description: "Proyecto que realicé en conjunto con mis compañeros de CodeYNC, trabajé gran parte del backend y un poco en el frontend.",
-    href: 'https://hyllsrecords.com/',
-    skills: [
-      "Node.js",
-      "Express",
-      "React",
       "React Router",
-      "MySQL",
-      "Tailwind",
-      "Figma",
-      "Scrum",
-      "Git",
-      "Postman"
+      "TypeScript"
     ]
   },
+
   {
-    img: devWebCamp,
-    title: "Developer - Estudiante",
-    description: "Fue un proyecto que hice como práctica integral de todo lo que aprendí. CRUDS, autenticaciones, panel de adminitración, pasarelas de pago, entre otras.",
-    href: 'https://github.com/tomasherreradev/proyecto_campus',
+    img: autosalexImage,
+    title: "Auto Subastas Salex - Freelancer",
+    description: "Proyecto realizado con MERN, en este caso, para una casa de subastas de autos.",
+    href: 'https://gentle-puppy-39cf62.netlify.app/',
     skills: [
-      "Javascript",
-      "HTML5",
-      "CSS3",
-      "SCSS",
-      "MySQL",
-      "PHP",
-      "Gulp",
-      "Composer",
+      "React",
+      "Styled Components",
+      "Express",
+      "MongoDB",
+      "Node.js",
+      "TypeScript"
     ]
-  }
+  },
+
+  {
+    img: artdhistoireImage,
+    title: "ArtD'Histoire - InitSoluciones",
+    description: "Proyecto en el que participé activamente como Full-Stack Developer, añadiendo funcionalidades al frontend y backend.",
+    href: 'https://artdhistoire.com/',
+    skills: [
+      "Laravel",
+      "MySQL",
+      "Tailwind",
+      "Composer"
+    ]
+  },
+
 ];
 
 export default function ProyectsContainer() {

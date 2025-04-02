@@ -1,3 +1,4 @@
+
 import icon1 from '/src/assets/icons-tech/1.svg';
 import icon2 from '/src/assets/icons-tech/2.svg';
 import icon3 from '/src/assets/icons-tech/3.svg';
@@ -15,17 +16,17 @@ import icon14 from '/src/assets/icons-tech/14.svg';
 
 
 const skillData = [
-  { name: "HTML5", icon: icon1 },
-  { name: "CSS3", icon: icon2 },
+  { name: "Laravel", icon: icon1},
+  { name: "FTP Servers", icon: icon2 },
   { name: "SCSS", icon: icon3 },
-  { name: "Javascript", icon: icon4 },
+  { name: "TypeScript", icon: icon4 },
   { name: "React", icon: icon5 },
   { name: "Tailwind", icon: icon6 },
   { name: "Node.js", icon: icon7 },
   { name: "MongoDB", icon: icon8 },
   { name: "MySQL", icon: icon9 },
   { name: "Express", icon: icon10 },
-  { name: "VsCode", icon: icon11 },
+  { name: "Docker", icon: icon11 },
   { name: "Postman", icon: icon12 },
   { name: "Responsive Design", icon: icon13 },
   { name: "RESTful APIs", icon: icon14 },
