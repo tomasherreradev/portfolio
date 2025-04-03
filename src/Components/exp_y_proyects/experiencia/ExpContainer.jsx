@@ -4,7 +4,7 @@ import ExpCard from './card/ExpCard';
 const experiences = [
   {
     year: '2022 - 2023',
-    title: 'Developer - Freelancer',
+    title: 'Freelancer',
     role: 'Full-Stack Developer',
     description: 'Me encargué de planificar, diseñar, codificar, posicionar y publicitar los proyectos que conseguía en plataformas como Workana, Discord, entre otras.',
     skills: [
@@ -19,7 +19,7 @@ const experiences = [
   },
   {
     year: '2023 - 2024',
-    title: 'Developer - CODEYNC',
+    title: 'CODEYNC',
     role: 'Full-Stack Developer',
     description: 'Formé parte de un equipo para una startup de Colombia. Mis tareas variaban desde crear APIs y CRUDS, hasta maquetar y crear el Frontend. También, en menor medida, realicé tareas como historias de usuario, debuggear errores, participar de reuniones y planificación',
     skills: [
@@ -37,7 +37,7 @@ const experiences = [
   },
   {
     year: '2024 - 2025',
-    title: 'Developer - InitSoluciones',
+    title: 'InitSoluciones',
     role: 'Full-Stack Developer',
     description: 'Ahora mismo me encuentro desarrollando y aprendiendo tecnologías nuevas en InitSoluciones.',
     skills: [

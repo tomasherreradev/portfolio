@@ -3,6 +3,9 @@ import { useState } from "react";
 import downLoadIcon from "./../../assets/icons/download.svg";
 import barsMenu from "./../../assets/icons/bars.svg";
 import closeMenu from "./../../assets/icons/x-solid.svg";
+import githubIcon from "./../../assets/icons/github.svg";
+import linkedInIcon from "./../../assets/icons/linkedin-in.svg";
+import gmailIcon from "./../../assets/icons/gmail.svg";
 
 export default function NavigationDesk() {
   const [isMenuMobileOpen, setIsMenuMobileOpen] = useState(false);
@@ -12,6 +15,12 @@ export default function NavigationDesk() {
     { name: "Experiencia", href: "#experiencia" },
     { name: "Proyectos", href: "#proyectos" },
     { name: "Contacto", href: "#contacto" },
+  ];
+
+  const socialMedia = [
+    { name: "GitHub", href: "https://github.com/tomasherreradev", icon: githubIcon },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/tomas-herrera-909345213/", icon: linkedInIcon },
+    { name: "Gmail", href: "mailto:herreratomas270@gmail.com", icon: gmailIcon },
   ];
 
   const toggleMobileMenu = () => {
@@ -66,11 +75,11 @@ export default function NavigationDesk() {
       </nav>
 
       {/* Mobile Menu */}
-      <div className={`menuMobile ${isMenuMobileOpen ? "show" : ""}`}>
+      <div className={`menuMobile ${isMenuMobileOpen ? "show" : "hide"}`}>
         <button className="close-mobile-menu-button" onClick={toggleMobileMenu}>
-          <img className="w-8" src={closeMenu} alt="cerrar" />
+          <img className="w-5" src={closeMenu} alt="cerrar" />
         </button>
-        <ul>
+        <ul className="menuMobile-ul">
           {enlaces.map((enlace) => (
             <li key={enlace.name}>
               <a
@@ -83,6 +92,29 @@ export default function NavigationDesk() {
             </li>
           ))}
         </ul>
+
+        <footer className="w-full h-16 absolute bottom-9">
+          <ul className="flex justify-center items-center gap-6">
+            {socialMedia.map((social) => (
+              <li key={social.name} className="inset-0">
+                <div>
+                  <a 
+                    href={social.href} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="social-link"
+                  >
+                    <img 
+                      src={social.icon} 
+                      alt={social.name} 
+                      className="w-6"
+                    />
+                  </a>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </footer>
       </div>
     </header>
   );

@@ -78,7 +78,7 @@ export default function ProyectsContainer() {
           className="flex items-center justify-center text-nowrap gap-3 transition-all group-hover:text-[#8AEDC9]"
           href="https://github.com/tomasherreradev?tab=repositories" target="_blank"
         >
-          Ver Todos
+          Repositorios
           <img src={arrowIcon} className="max-w-5 mt-[2px]" alt="arrow icon" />
         </a>
       </div>

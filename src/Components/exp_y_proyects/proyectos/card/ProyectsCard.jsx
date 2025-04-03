@@ -5,8 +5,8 @@ export default function ProyectsCard({ img, title, description, href, skills }) 
   return (
     <div className="w-full max-w-[750px] flex p-4 rounded-xl border border-transparent transition-all bg-gray-900 hover:border-[#8AEDC9] group">
       <div className="flex flex-col items-start px-4">
-        <a className="flex items-center gap-2 mb-4" href={href} target="_blank" rel="noopener noreferrer">
-          <img className="max-w-32" src={img} alt="imagen_proyecto" />
+          <a className="flex flex-col sm:flex-row items-center gap-2 mb-4 w-full" href={href} target="_blank" rel="noopener noreferrer">
+          <img className="max-w-32 max-[380px]:mb-2" src={img} alt="imagen_proyecto" />
           <h3 className="transition-all group-hover:text-[#8AEDC9] text-[15px] xl:text-[18px] -[19px] sm:text-nowrap font-bold text-white">{title}</h3>
           <img src={arrowIcon} className="transition-all group-hover:text-[#8AEDC9] group-hover:max-w-5 max-w-4 rotate-[-30deg] max-sm:hidden" alt="ver sitio" />
         </a>

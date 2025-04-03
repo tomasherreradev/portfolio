@@ -13,7 +13,7 @@ export default function Presentacion() {
           <div className='min-w-64 min-h-64'>
             <img className='w-full h-full max-h-64 max-w-64 rounded-[100%]' src={fotoPerfil} alt="foto de perfil" />
           </div>
-            <p className='text-[14px] text-left font-light sm:px-2 xl:px-8 text-white'>
+            <p className='text-[14px] text-left font-light sm:px-2 xl:px-24 text-white'>
                 Hola! Soy Tomás, tengo 23 años, <span className='font-black'>vivo en La Rioja, Argentina.</span> Me especializo en la creación de aplicaciones web visualmente atractivas y altamente funcionales. En todos mis proyectos, me destaqué por cumplir con mis responsabilidades sin importar la dificultad y los tiempos de entrega.
             </p>
         </div>
